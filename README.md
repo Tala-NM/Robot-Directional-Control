@@ -63,11 +63,11 @@ CREATE TABLE directional_table (
 2. Write PHP code to handle saving direction commands to the database `my_robot_db`.
 
 ### Interface Screenshot
-![HTML Interface](Screenshot 2024-07-06 193220.png)
+![HTML Interface](IMG_5059.jpg)
 *Screenshot of the HTML interface with directional buttons.*
 
 ### Database Table Screenshot
-![Database Table](Screenshot 2024-07-06 193239.png)
+![Database Table](IMG_5058.jpg)
 *Screenshot of the \directional_table\ structure in \my_robot_db\.*
 
 ## Code Folder
