@@ -1,0 +1,23 @@
+<?php
+if (isset($_POST['direction'])) {
+    $conn = new mysqli("localhost", "root", "", "my_robot_db");
+
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+    $direction = substr($_POST['direction'], 0, 1); 
+
+    $sql = "INSERT INTO directional_table (direction) VALUES ('$direction')";
+
+    if ($conn->query($sql) === TRUE) {
+        echo "Direction stored successfully."; 
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error; 
+    }
+
+    $conn->close();
+} else {
+    echo "Direction data not received.";
+}
+?>
