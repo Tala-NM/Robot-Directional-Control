@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot Directional</title>
+    <link rel="stylesheet" href="Dir.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Robot Directional</h1>
+        <div class="buttons">
+            <button class="stop" onclick="sendDirection('S')">Stop</button>
+            <button class="forward" onclick="sendDirection('F')">Forward</button>
+            <button class="backward" onclick="sendDirection('B')">Backward</button>
+            <button class="left" onclick="sendDirection('L')">Left</button>
+            <button class="right" onclick="sendDirection('R')">Right</button>
+        </div>
+    </div>
+
+    <script src="D.js"></script>
+</body>
+</html>
